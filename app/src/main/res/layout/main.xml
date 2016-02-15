@@ -1,0 +1,319 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".Main">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Main">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/logo" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:stretchColumns="1">
+
+            <TableRow
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="wrap_content"
+                    android:layout_height="2dp"
+                    android:layout_span="2"
+                    android:background="#004040"
+                    android:text="" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_selector"
+                android:onClick="showFootballEnglandNew">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        android:id="@+id/thumbnail1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/image_bg"
+                        android:padding="3dip">
+
+                        <ImageView
+                            android:id="@+id/list_image1"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/anhlogo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/thumbnail1"
+                        android:layout_toRightOf="@+id/thumbnail1"
+                        android:text="@string/catelogy_England"
+                        android:textColor="#040404"
+                        android:textSize="30dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_selector"
+                android:onClick="showFootballVNNew">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        android:id="@+id/thumbnail2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/image_bg"
+                        android:padding="3dip">
+
+                        <ImageView
+                            android:id="@+id/list_image2"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/vietnamlogo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/thumbnail2"
+                        android:layout_toRightOf="@+id/thumbnail2"
+                        android:text="@string/catelogy_VN"
+                        android:textColor="#040404"
+                        android:textSize="30dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_selector"
+                android:onClick="showFootballYNew">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        android:id="@+id/thumbnail3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/image_bg"
+                        android:padding="3dip">
+
+                        <ImageView
+                            android:id="@+id/list_image3"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/ylogo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/thumbnail3"
+                        android:layout_toRightOf="@+id/thumbnail3"
+                        android:text="@string/catelogy_Y"
+                        android:textColor="#040404"
+                        android:textSize="30dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_selector"
+                android:onClick="showFootballSpanNew">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        android:id="@+id/thumbnail5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/image_bg"
+                        android:padding="3dip">
+
+                        <ImageView
+                            android:id="@+id/list_image5"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/tbnlogo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/thumbnail5"
+                        android:layout_toRightOf="@+id/thumbnail5"
+                        android:text="@string/catelogy_Span"
+                        android:textColor="#040404"
+                        android:textSize="30dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/list_selector"
+                android:onClick="showFootballUEFANew">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_span="2"
+                    android:orientation="horizontal"
+                    android:padding="5dip">
+
+                    <LinearLayout
+                        android:id="@+id/thumbnail4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginRight="5dip"
+                        android:background="@drawable/image_bg"
+                        android:padding="3dip">
+
+                        <ImageView
+                            android:id="@+id/list_image4"
+                            android:layout_width="70dip"
+                            android:layout_height="70dip"
+                            android:src="@drawable/uefalogo" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/title4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@+id/thumbnail4"
+                        android:layout_toRightOf="@+id/thumbnail4"
+                        android:text="@string/catelogy_EU"
+                        android:textColor="#040404"
+                        android:textSize="30dip"
+                        android:textStyle="bold"
+                        android:typeface="sans" />
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_column="1"
+                        android:layout_gravity="center_vertical"
+                        android:src="@drawable/arrow" />
+                </RelativeLayout>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>

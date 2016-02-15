@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) $2015. Just For Fun :)
+  -->
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/articleTitle"
+    android:text="Juve qua den thoi, do quen di"
+    android:textSize="15sp"
+    android:textColor="#ff0009ff"
+    android:textAllCaps="true"
+    android:gravity="center_horizontal"
+    android:paddingTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/articleNewsDetail"
+        android:text="Chuan cmnr "
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textStyle="italic"
+        android:textColor="#ff000000"/>
+</LinearLayout>
